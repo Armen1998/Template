@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Template.Authorization.Roles
+namespace Template.Application.Authorization.Roles
 {
-    public class RoleController
+    class RoleController
     {
-
     }
 }
