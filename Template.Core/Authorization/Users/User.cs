@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Template.Core.Authorization.User
+namespace Template.Core.Authorization.Users
 {
     public class User : Entity<long>
     {
