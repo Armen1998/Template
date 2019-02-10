@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Template.Authorization.Roles
+namespace Template.EntityFrameworkCore.Repositories
 {
-    public class RoleController
+    public class RepositoryBase
     {
-
     }
 }

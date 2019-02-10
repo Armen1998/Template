@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Template.Core.Authorization.Roles;
-using Template.Core.Authorization.Users;
+using Template.Authorization.Roles;
+using Template.Authorization.Users;
 
 namespace Template.EntityFrameworkCore
 {

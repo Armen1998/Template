@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using Template.Core;
 
-namespace Template.Core.Authorization.Roles
+namespace Template.Authorization.Roles
 {
     public class Role : Entity
     {

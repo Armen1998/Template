@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Template.Application.Authorization.Users
+namespace Template.Authorization.Users
 {
     [Route("api/[controller]")]
     [ApiController]

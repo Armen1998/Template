@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using Template.Core;
 
-namespace Template.Core.Authorization.Users
+namespace Template.Authorization.Users
 {
     public class User : Entity<long>
     {

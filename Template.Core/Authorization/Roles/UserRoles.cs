@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using Template.Core.Authorization.Users;
+using Template.Authorization.Users;
+using Template.Core;
 
-namespace Template.Core.Authorization.Roles
+namespace Template.Authorization.Roles
 {
     public class UserRoles : Entity<long>
     {

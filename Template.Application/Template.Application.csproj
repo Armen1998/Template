@@ -12,4 +12,9 @@
     <ProjectReference Include="..\Template.Core\Template.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Authorization\Roles\Dto\" />
+    <Folder Include="Authorization\Users\Dto\" />
+  </ItemGroup>
+
 </Project>

@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="EntityFrameworkCore\Seed\" />
-    <Folder Include="EntityFrameworkCore\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
