@@ -5,20 +5,20 @@ using System.Text;
 namespace Template.Application
 {
     /// <summary>
-    /// This entityDto includes Id with type int.
+    /// This IEntityDto includes Id with type int.
     /// </summary>
-    public class EntityDto : EntityDto<int>
+    public interface IEntityDto : IEntityDto<int>
     {
 
     }
 
     /// <summary>
-    /// This entityDto includes Id with type T.
+    /// This IEntityDto includes Id with type T.
     /// </summary>
     /// <typeparam name="T">T is value type.</typeparam>
-    public class EntityDto<TPrimaryKey> : IEntityDto<TPrimaryKey>
+    public interface IEntityDto<TPrimaryKey>
         where TPrimaryKey : struct
     {
-        public TPrimaryKey Id { get; set; }
+        TPrimaryKey Id { get; set; }
     }
 }
