@@ -5,20 +5,21 @@ using System.Text;
 namespace Template.Core
 {
     /// <summary>
-    /// This entity includes Id with type int.
+    /// This IEntity includes Id with type int.
     /// </summary>
-    public class Entity : Entity<int>
-    {        
-
+    public interface IEntity : IEntity<int>
+    {
+        
     }
 
+
     /// <summary>
-    /// This entity includes Id with type T.
+    /// This IEntity includes Id with type T.
     /// </summary>
     /// <typeparam name="T">T is value type.</typeparam>
-    public class Entity<TPrimaryKey> : IEntity<TPrimaryKey>
+    public interface IEntity<TPrimaryKey> 
         where TPrimaryKey : struct
     {
-        public TPrimaryKey Id { get; set; }
+        TPrimaryKey Id { get; set; }
     }
 }
