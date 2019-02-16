@@ -18,7 +18,6 @@ namespace Template.Core
     /// </summary>
     /// <typeparam name="T">T is value type.</typeparam>
     public interface IEntity<TPrimaryKey> 
-        where TPrimaryKey : struct
     {
         TPrimaryKey Id { get; set; }
     }
