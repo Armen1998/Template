@@ -26,6 +26,7 @@ namespace Template.Core.Repositories
         Task DeleteAsync(Expression<Func<TEntity, bool>> predicate);
         TEntity Get(TPrimaryKey id);
         IQueryable<TEntity> GetAll();
+        IQueryable<TEntity> GetAllIncluding(params Expression<Func<TEntity, object>>[] propertySelectors);
     }
 
     public interface IRepository : ITransientDependency
