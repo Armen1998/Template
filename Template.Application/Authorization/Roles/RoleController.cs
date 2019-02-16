@@ -1,13 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Template.Authorization.Roles
+namespace Template.Application.Authorization.Roles
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    class RoleController : ControllerBase
+    class RoleController
     {
     }
 }
