@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Template.EntityFrameworkCore;
+using Template.Web.Host.Extensions;
 
 namespace Template.Web.Host
 {
@@ -31,8 +32,9 @@ namespace Template.Web.Host
             services.AddMvc().AddApplicationPart(Assembly.Load(new AssemblyName("Template.Application")));
 
             services.AddDbContext<TemplateDbContext>(opts =>
-                opts.UseNpgsql(Configuration.GetConnectionString("Postgresql")));        
-                       
+                opts.UseNpgsql(Configuration.GetConnectionString("Postgresql")));
+
+            services.RegisterServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
