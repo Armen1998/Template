@@ -34,6 +34,9 @@ namespace Template.Web.Host
             services.AddDbContext<TemplateDbContext>(opts =>
                 opts.UseNpgsql(Configuration.GetConnectionString("Postgresql")));
 
+            //services.AddDbContext<TemplateDbContext>(opts =>
+            //    opts.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
+
             services.RegisterServices();
         }
 
