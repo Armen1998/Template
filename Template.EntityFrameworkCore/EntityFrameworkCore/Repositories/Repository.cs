@@ -9,6 +9,15 @@ using Template.Core.Repositories;
 
 namespace Template.EntityFrameworkCore.Repositories
 {
+    public class Repository<TEntity> : Repository<TEntity, int>, IRepository<TEntity>
+        where TEntity : class, IEntity<int>
+    {
+        public Repository(TemplateDbContext context) : base(context)
+        {
+
+        }
+    }
+
     public class Repository<TEntity, TPrimaryKey> : IRepository<TEntity, TPrimaryKey>
       where TEntity : class, IEntity<TPrimaryKey>
     {
