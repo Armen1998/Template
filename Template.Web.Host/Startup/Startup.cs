@@ -12,7 +12,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Template.Authorization.Roles;
+using Template.Authorization.Users;
+using Template.Core.Repositories;
 using Template.EntityFrameworkCore;
+using Template.EntityFrameworkCore.Repositories;
 using Template.Web.Host.Extensions;
 
 namespace Template.Web.Host
@@ -36,6 +40,10 @@ namespace Template.Web.Host
 
             //services.AddDbContext<TemplateDbContext>(opts =>
             //    opts.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
+
+            services.AddTransient<IRepository<User, long>, Repository<User, long>>();
+            services.AddTransient<IRepository<UserRoles, long>, Repository<UserRoles, long>>();
+            services.AddTransient<IRepository<Role>, Repository<Role>>();            
 
             services.RegisterServices();
         }
