@@ -7,7 +7,7 @@ namespace Template.Web.Host.Extensions
 {
     public static class ServiceCollectionExtension
     {
-        public static void RegisterServices(this IServiceCollection service)
+        public static void RegisterServices(this IServiceCollection services)
         {
             var assembly = Assembly.Load(new AssemblyName("Template.Core"));
 
@@ -27,19 +27,20 @@ namespace Template.Web.Host.Extensions
 
                 if (type.GetInterface(nameof(ITransientDependency)) != null)
                 {
-                    service.AddTransient(@interface, type);
+                    services.AddTransient(@interface, type);
                 }
 
                 if (type.GetInterface(nameof(ISingletonDependency)) != null)
                 {
-                    service.AddSingleton(@interface, type);
+                    services.AddSingleton(@interface, type);
                 }
 
                 if (type.GetInterface(nameof(IScopedDependency)) != null)
                 {
-                    service.AddScoped(@interface, type);
+                    services.AddScoped(@interface, type);
                 }
             }
         }
+      
     }
 }
