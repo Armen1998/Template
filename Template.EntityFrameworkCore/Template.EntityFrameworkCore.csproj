@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Template.Core\Template.Core.csproj" />
+    <ProjectReference Include="..\Template.Shared\Template.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

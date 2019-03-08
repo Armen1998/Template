@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Template.Core;
-using Template.Core.Extensions;
+using Template.Shared.Extensions;
 using Template.Core.Repositories;
 
 namespace Template.EntityFrameworkCore.Repositories
