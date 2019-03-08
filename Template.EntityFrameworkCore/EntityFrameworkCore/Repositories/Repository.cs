@@ -4,8 +4,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Template.Core;
-using Template.Shared.Extensions;
 using Template.Core.Repositories;
+using Template.Shared.Collection.Extensions;
 
 namespace Template.EntityFrameworkCore.Repositories
 {
