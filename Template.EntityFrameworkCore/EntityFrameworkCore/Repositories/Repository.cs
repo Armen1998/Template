@@ -46,12 +46,14 @@ namespace Template.EntityFrameworkCore.Repositories
 
         public void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            Entity.Update(entity);
+            _context.SaveChanges();
         }
 
-        public Task UpdateAsync(TEntity entity)
+        public async Task UpdateAsync(TEntity entity)
         {
-            throw new NotImplementedException();
+            Entity.Update(entity);
+            await _context.SaveChangesAsync();
         }
 
         public void Delete(TPrimaryKey id)
