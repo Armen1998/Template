@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Template.Shared.Collection.Extensions
 {
-    public static class EnumerableExtensions
+    public static class CollectionExtensions
     {
         public static bool IsNullOrEmpty<T>(this ICollection<T> source)
         {
