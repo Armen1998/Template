@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.EntityFrameworkCor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Web.Core", "Template.Web.Core\Template.Web.Core.csproj", "{6AB39A35-6824-4C59-81F9-E723F71FA552}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Shared", "Template.Shared\Template.Shared.csproj", "{B927E1C8-C82D-4E9F-B675-26A3A30730BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Shared", "Template.Shared\Template.Shared.csproj", "{B927E1C8-C82D-4E9F-B675-26A3A30730BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Migrator", "Template.Migrator\Template.Migrator.csproj", "{BA36B934-B175-4FF9-8551-8C4E7CD248DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B927E1C8-C82D-4E9F-B675-26A3A30730BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B927E1C8-C82D-4E9F-B675-26A3A30730BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B927E1C8-C82D-4E9F-B675-26A3A30730BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA36B934-B175-4FF9-8551-8C4E7CD248DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA36B934-B175-4FF9-8551-8C4E7CD248DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA36B934-B175-4FF9-8551-8C4E7CD248DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA36B934-B175-4FF9-8551-8C4E7CD248DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
